@@ -44,7 +44,8 @@ jobs:
         run: |
           mkdir -p dist/raindrop-quick-links
           cp -r manifest.json api.js popup.html popup.js options.html options.js style.css icons README.md dist/raindrop-quick-links/
-          (cd dist && zip -r "../${ZIP}" raindrop-quick-links)
+          (cd dist && python3 -m zipfile -c "${GITHUB_WORKSPACE}/${ZIP}" raindrop-quick-links)
+          test -s "$ZIP" && python3 -m zipfile -l "$ZIP"
 
       - name: Publish release
         if: steps.check.outputs.exists == 'false'
