@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>Raindrop Quick Links · Settings</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body class="options">
+  <h1>Raindrop Quick Links</h1>
+  <p class="hint">Shows one Raindrop folder and its subfolders in a popup. Links load live from Raindrop and are never saved as browser bookmarks.</p>
+
+  <label for="token">Raindrop test token</label>
+  <p class="hint">
+    In Raindrop, open <a href="https://app.raindrop.io/settings/integrations" target="_blank">Settings › Integrations</a>,
+    create an app under "For developers", then copy its test token.
+  </p>
+  <input id="token" type="password" placeholder="Paste your test token" autocomplete="off">
+  <div class="btns"><button id="load" class="btn">Load folders</button></div>
+
+  <label for="folder">Folder to show</label>
+  <select id="folder" disabled><option>Load folders first</option></select>
+
+  <div class="btns"><button id="save" class="btn primary">Save</button></div>
+  <p id="msg" class="hint"></p>
+
+  <p class="hint" style="margin-top:28px">
+    Shortcut: Alt+R (Option+R on Mac). Change it at chrome://extensions/shortcuts.
+  </p>
+
+  <script src="api.js"></script>
+  <script src="options.js"></script>
+</body>
+</html>

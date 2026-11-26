@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body class="popup">
+  <header class="head">
+    <img src="icons/icon32.png" alt="" class="logo">
+    <span id="title" class="title">Quick links</span>
+    <span id="inbox" class="pill" hidden title="Links waiting in Unsorted"></span>
+    <button id="settings" class="icon-btn" title="Settings" aria-label="Settings">&#9881;</button>
+  </header>
+
+  <input id="q" type="search" placeholder="Search this folder" autocomplete="off" autofocus>
+
+  <main id="content"></main>
+  <p id="empty" class="muted" hidden></p>
+
+  <footer class="foot">
+    <span id="status">Loading…</span>
+    <button id="refresh" class="link-btn" title="Reload from Raindrop">Refresh</button>
+  </footer>
+
+  <script src="api.js"></script>
+  <script src="popup.js"></script>
+</body>
+</html>
