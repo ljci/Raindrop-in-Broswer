@@ -21,6 +21,10 @@ Links are loaded live from Raindrop each time you open the popup. Nothing is wri
 - Shortcut: Alt+R (Option+R on Mac). Change it at `chrome://extensions/shortcuts`.
 - To add, remove or reorder links, do it in Raindrop. The popup follows.
 
+## Releasing a new version
+Bump `"version"` in `manifest.json` (e.g. 1.0.0 → 1.0.1) and push to `main`.
+CI builds the zip and publishes release `v1.0.1` automatically. Pushes that don't change the version publish nothing.
+
 ## What it stores
 - Your token, chosen folder and which subfolders are folded: extension storage on this computer.
 - The last loaded list: session storage, wiped when the browser closes (lets the popup draw instantly).
