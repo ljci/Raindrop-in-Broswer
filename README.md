@@ -4,7 +4,7 @@ A one-click popup that shows one Raindrop folder (default: **Browser**) and all 
 Links are loaded live from Raindrop each time you open the popup. Nothing is written to your browser bookmarks.
 
 ## Install (Chrome, Arc, Brave, Edge)
-1. Download the latest zip from [Releases](https://github.com/ljci/Raindrop-in-Broswer/releases/latest) and unzip it somewhere permanent (e.g. Documents/raindrop-quick-links).
+1. Download the latest zip from [Releases](https://github.com/ljci/Raindrop-in-Broswer/releases/latest), unzip it, and move the folder somewhere permanent (e.g. Documents). That folder contains `manifest.json`.
 2. Open `chrome://extensions` and turn on **Developer mode** (top right).
 3. Click **Load unpacked** and pick the unzipped folder.
 4. Pin the extension (puzzle icon > pin).
